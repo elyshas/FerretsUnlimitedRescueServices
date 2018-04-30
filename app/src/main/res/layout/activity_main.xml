@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CFD8DC"
+    tools:context="org.ferretsunlimited.ferretsunlimitedrescueservices.MainActivity">
+
+    <!--Layout for overall design-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/annabel_ferret" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                style="@style/CircleImage"
+                android:layout_marginTop="70dp"
+                android:src="@drawable/furs_logo5"
+                app:civ_border_color="#3F51B5"
+                app:civ_border_width="4dp" />
+
+        </FrameLayout>
+
+        <!--Text banner-->
+        <TextView
+            style="@style/Header"
+            android:text="Nonprofit Ferret Rescue and Foster Organization" />
+
+        <!--Layout for general contact information with links-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/InfoText"
+                android:onClick="homepageLink"
+                android:clickable="true"
+                android:autoLink="web"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="8dp"
+                android:text="FerretsUnlimited.org" />
+
+            <TextView
+                style="@style/InfoText"
+                android:onClick="facebookLink"
+                android:autoLink="web"
+                android:text="Facebook.com/FerretsUnlimited" />
+
+            <TextView
+                style="@style/InfoText"
+                android:layout_marginTop="18dp"
+                android:layout_marginBottom="18dp"
+                android:textStyle="bold"
+                android:text="Volunteers located around Cleveland, OH" />
+
+            <TextView
+                style="@style/InfoText"
+                android:autoLink="email"
+                android:layout_marginBottom="8dp"
+                android:text="FerretsUnlimited@yahoo.com" />
+
+            <TextView
+                style="@style/InfoText"
+                android:autoLink="phone"
+                android:layout_marginBottom="16dp"
+                android:text="(216) 502-2977" />
+
+            <!--Layout for bottom buttons-->
+           <LinearLayout
+               android:layout_width="wrap_content"
+               android:layout_height="match_parent"
+               android:orientation="horizontal"
+               android:layout_gravity="center_horizontal"
+               android:layout_marginBottom="18dp">
+
+               <Button
+                   style="@style/Buttons"
+                   android:onClick="donate"
+                   android:backgroundTint="#455A64"
+                   android:text="Donate" />
+
+               <Button
+                   style="@style/Buttons"
+                   android:onClick="foster"
+                   android:layout_marginLeft="7dp"
+                   android:layout_marginRight="7dp"
+                   android:backgroundTint="#455A64"
+                   android:text="Foster" />
+
+               <Button
+                   style="@style/Buttons"
+                   android:onClick="events"
+                   android:backgroundTint="#455A64"
+                   android:text="Events" />
+
+           </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
