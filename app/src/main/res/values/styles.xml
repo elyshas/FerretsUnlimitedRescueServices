@@ -9,7 +9,8 @@
     </style>
 
     <!-- CIRCLE IMAGE style -->
-    <style name="CircleImage" >
+    //Emailed nonprofit organization for approval to use this icon image. Waiting for response. Will swap out if needed.
+    <style name="CircleImage">
         <item name="android:layout_width">130dp</item>
         <item name="android:layout_height">130dp</item>
         <item name="android:layout_gravity">right</item>
@@ -23,7 +24,7 @@
         <item name="android:gravity">center</item>
         <item name="android:layout_marginTop">8dp</item>
         <item name="android:layout_marginBottom">5dp</item>
-        <item name="android:padding">8dp</item>
+        <item name="android:padding">10dp</item>
         <item name="android:textAllCaps">true</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textSize">24sp</item>

@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    //Clickable texview takes user to website's homepage
+    //Clickable texview takes user to FURS website's homepage
     public void homepageLink(View view) {
         String url = "http://www.ferretsunlimited.org/";
         Intent i = new Intent(Intent.ACTION_VIEW);
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    //Clickable textview takes user to facebook profile page
+    //Clickable textview takes user to FURS facebook profile page
     public void facebookLink(View view) {
         String url = "https://www.facebook.com/FerretsUnlimited/";
         Intent i = new Intent(Intent.ACTION_VIEW);
@@ -38,15 +38,15 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    //Donate Button takes user to PayPal custom link
+    //Donate Button takes user to PayPal FURS link
     public void donate(View view) {
-        String url = "https://www.paypal.com/donate/?token=NbMKMLLjtd0J6ROca2oY-UtVT1ILpPOwIRvIyctplxJEt-DygcqWQPqmFCcjRq5CprzyzW&country.x=US&locale.x=US";
+        String url = "https://www.paypal.com/donate/?token=lkfXEnuoT-mRsyKBjCI0sjOE3G2fIbHgFbwNOHSvgBTeHcyw7rnnOuoaG6-ljyuAzlh620&country.x=US&locale.x=US";
         Intent i = new Intent(Intent.ACTION_VIEW);
         i.setData(Uri.parse(url));
         startActivity(i);
     }
 
-    //Foster button takes user to ferretsunlimited website, foster specific page
+    //Foster button takes user to FURS website, foster specific page
     public void foster(View view) {
         String url = "http://www.ferretsunlimited.org/foster.html";
         Intent i = new Intent(Intent.ACTION_VIEW);
@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    //Events link take user to events page on their Facebook profile
+    //Events link take user to events page on FURS Facebook profile
     public void events(View view) {
         String url = "http://www.facebook.com/pg/FerretsUnlimited/events/?ref=page_internal";
         Intent i = new Intent(Intent.ACTION_VIEW);
