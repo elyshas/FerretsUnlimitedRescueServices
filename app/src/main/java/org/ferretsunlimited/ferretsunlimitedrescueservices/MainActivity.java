@@ -22,44 +22,51 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
-    //Clickable texview takes user to FURS website's homepage
-    public void homepageLink(View view) {
-        String url = "http://www.ferretsunlimited.org/";
-        Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
-        startActivity(i);
-    }
-
-    //Clickable textview takes user to FURS facebook profile page
-    public void facebookLink(View view) {
-        String url = "https://www.facebook.com/FerretsUnlimited/";
-        Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
-        startActivity(i);
-    }
+    //NOT NEEDED DUE TO USING AUTOLINK IN XML
+    // Clickable texview takes user to FURS website's homepage
+//    public void homepageLink(View view) {
+//        String url = "http://www.ferretsunlimited.org/";
+//        Intent i = new Intent(Intent.ACTION_VIEW);
+//        i.setData(Uri.parse(url));
+//        startActivity(i);
+//    }
+//
+//    //Clickable textview takes user to FURS facebook profile page
+//    public void facebookLink(View view) {
+//        String url = "https://www.facebook.com/FerretsUnlimited/";
+//        Intent i = new Intent(Intent.ACTION_VIEW);
+//        i.setData(Uri.parse(url));
+//        startActivity(i);
+//    }
 
     //Donate Button takes user to PayPal FURS link
     public void donate(View view) {
         String url = "https://www.paypal.com/donate/?token=lkfXEnuoT-mRsyKBjCI0sjOE3G2fIbHgFbwNOHSvgBTeHcyw7rnnOuoaG6-ljyuAzlh620&country.x=US&locale.x=US";
-        Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
-        startActivity(i);
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(url));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);  //where intent is your intent
+        }
     }
 
     //Foster button takes user to FURS website, foster specific page
     public void foster(View view) {
         String url = "http://www.ferretsunlimited.org/foster.html";
-        Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
-        startActivity(i);
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(url));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);  //where intent is your intent
+        }
     }
 
     //Events link take user to events page on FURS Facebook profile
     public void events(View view) {
         String url = "http://www.facebook.com/pg/FerretsUnlimited/events/?ref=page_internal";
-        Intent i = new Intent(Intent.ACTION_VIEW);
-        i.setData(Uri.parse(url));
-        startActivity(i);
+        Intent intent = new Intent(Intent.ACTION_VIEW);
+        intent.setData(Uri.parse(url));
+        if (intent.resolveActivity(getPackageManager()) != null) {
+            startActivity(intent);  //where intent is your intent
+        }
     }
 
 }

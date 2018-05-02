@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">Ferrets Unlimited Rescue Services</string>
+    <string name="header">Nonprofit Ferret Rescue and Foster Organization</string>
+    <string name="website">FerretsUnlimited.org</string>
+    <string name="facebook">Facebook.com/FerretsUnlimited</string>
+    <string name="volunteers">Volunteers located around Cleveland, OH</string>
+    <string name="email">FerretsUnlimited@yahoo.com</string>
+    <string name="number">(216) 502-2977</string>
+    <string name="donateButton">Donate</string>
+    <string name="fosterButton">Foster</string>
+    <string name="eventsButton">Events</string>
 </resources>
